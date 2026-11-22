@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
@@ -82,9 +82,9 @@ export default function Home() {
               Tạo phòng chơi, biên soạn câu hỏi, điều khiển
               trò chơi và theo dõi kết quả học sinh.
             </p>
-            <span className="inline-block rounded-lg bg-blue-500/20 px-4 py-2 text-sm font-semibold text-blue-200">
-              Khu vực giáo viên · Sắp ra mắt
-            </span>
+            <Link href="/giao-vien" className="inline-block rounded-lg bg-yellow-500 px-5 py-2.5 font-semibold text-slate-950 hover:bg-yellow-400 transition">
+              Vào Khu vực giáo viên →
+            </Link>
           </div>
 
           <div className="rounded-3xl border border-purple-400/30 bg-gradient-to-br from-purple-600/20 to-slate-900 p-8">
@@ -96,9 +96,9 @@ export default function Home() {
               Tham gia phòng bằng mã PIN, trả lời câu hỏi,
               tích lũy điểm và thi đua cùng các bạn.
             </p>
-            <span className="inline-block rounded-lg bg-purple-500/20 px-4 py-2 text-sm font-semibold text-purple-200">
-              Khu vực học sinh · Sắp ra mắt
-            </span>
+            <Link href="/hoc-sinh" className="inline-block rounded-lg bg-purple-600 px-5 py-2.5 font-semibold text-white hover:bg-purple-500 transition">
+               Tham gia ngay →
+            </Link>
           </div>
         </div>
       </section>
